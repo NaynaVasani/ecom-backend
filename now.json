@@ -1,0 +1,14 @@
+{
+  "name": "appmanagerserver",
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@now/node" }],
+  "routes": [
+    { "src": "/.*", "dest": "/" }
+  ],
+  "env": {
+    "CONNECTION_STRING": "mongodb+srv://hardik_vmn:NtzgM2hl74inc9Lo@cluster0.km14h.mongodb.net/appServer?retryWrites=true&w=majority",
+    "LOG_LEVEL": "debug",
+    "SECRET": "superSuperSecret"
+  },
+  "public": true
+}
